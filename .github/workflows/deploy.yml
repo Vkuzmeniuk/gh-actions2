@@ -6,8 +6,8 @@ on:
       - dev
 env:
   MONGODB_CLUSTER_ADDRESS: cluster0.h1xdwso.mongodb.net
-  MONGODB_USERNAME: vkuzmeniuk
-  MONGODB_PASSWORD: FBJSJArV7d28KEOu
+  MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
+  MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
